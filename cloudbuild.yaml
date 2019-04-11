@@ -1,0 +1,16 @@
+steps:
+# Install
+- name: 'grc.io/cloud-builders/yarn'
+  args: ['install']
+
+# Test
+- name: 'grc.io/cloud-builders/yarn'
+  args: ['test:unit']
+
+# Build
+- name: 'grc.io/cloud-builders/yarn'
+  args: ['build']
+
+# Deploy
+- name: 'grc.io/$PROJECT_ID/firebase'
+  args: ['deploy']
