@@ -4,7 +4,7 @@ steps:
   args:
   - kms
   - decrypt
-  - --ciphertextt-file=.env.enc
+  - --ciphertext-file=.env.enc
   - --plaintext-file=.env
   - --location=gloabl
   - --keyring=myproject
