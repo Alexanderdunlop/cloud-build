@@ -6,7 +6,7 @@ steps:
   - decrypt
   - --ciphertext-file=.env.enc
   - --plaintext-file=.env
-  - --location=gloabl
+  - --location=global
   - --keyring=myproject
   - --key=cloudbuild-env
 
